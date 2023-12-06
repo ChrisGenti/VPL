@@ -1,0 +1,132 @@
+#
+# Questo messaggio viene inviato quando un comando viene eseguito con una sintassi errata.
+no_correct_usage  =  "<red>L'uso corretto è: %command%."
+#
+# Questo messaggio viene inviato quando il giocatore esegue un comando che non è abilitato prima del login.
+blocked_command  =  "<red>Non puoi eseguire comandi se non sei loggato.."
+#
+# Questo messaggio viene inviato quando il comando /vpl viene eseguito con un sottocomando inesistente.
+no_sub_command  =  "<red>Questo subcommand sembra non esistere."
+#
+# Questo messaggio viene inviato quando il giocatore esegue un comando ma non dispone del permesso.
+no_permission  =  "<red>Non hai il permesso per eseguire questo comando."
+#
+# Questo messaggio viene inviato quando la console esegue un comando solo per player..
+no_console  =  "<red>Questo comando non può essere eseguito da console."
+#
+# Questo messaggio viene inviato quando si verifica un errore nel comando /vpl disable <player>.
+find_error  =  "<red>È stato rilevato un errore durante l'esecuzione del comando, riprova."
+
+
+#
+# Questo messaggio viene inviato al login del giocatore se ha un nome utente premium.
+premium_notification  =  """
+<reset>
+<bold><green>PREMIUM</bold>
+<white>Il tuo nickname sembra essere Premium!
+<reset>
+<bold><red>ATTENZIONE</bold>
+<white>Se possiedi Minecraft Premium,
+<white>proteggi il tuo account eseguendo il comando /premium.
+"""
+#
+# Questo messaggio viene inviato quando il giocatore esegue /premium e non ha un nome utente premium.
+no_premium_username  =  "<red>Il tuo nickname non sembra essere premium."
+#
+# Questo messaggio viene inviato al player quando viene unregistrato da un admin tramite AuthMe.
+force_unregistered  =  """
+<reset>
+<bold><green>AUTHME</bold>
+<white>Il tuo account è stato unregistrato da un amministratore.
+<reset>
+<bold><red>ATTENZIONE</bold>
+<white>Se non hai chiesto tu di essere unregistrato, contattaci subito sul nostro discord.
+<reset>
+"""
+#
+# Questo messaggio viene inviato al player quando conferma il comando /premium.
+premium_reconnect  =  """
+<reset>
+<bold><green>PREMIUM</bold>
+<white>Il tuo account è ora in modalità premium.
+<white>D'ora in poi non dovrai più autenticarti.
+<reset>
+<bold><red>ATTENTION</bold>
+<white>Se non ti riconnetti entro %minutes% minuti, il blocco premium verrà automaticamente rimosso.
+<reset>
+"""
+#
+# Questo messaggio viene inviato quando il player esegue /premium ma è già presente nel database.
+already_premium  =  "<red>Il login tramite premium è già impostato per questo account."
+#
+# Questo messaggio viene inviato quando il player esegue /premium per la prima volta.
+premium_confirm  =  """
+<reset>
+<bold><green>PREMIUM</bold>
+<white>Esegui di nuovo /premium per confermare!
+<reset>
+<bold><red>ATTENTION</bold>
+<white>Esegui solo se sei premium altrimenti
+<white>non potrai più accedere al tuo account.
+"""
+#
+# Questo messaggio viene inviato quando il player accede tramite premium.
+premium_login  =  """
+<reset>
+<bold><green>PREMIUM</bold>
+<white>Accesso eseguito tramite Minecraft Premium!
+<bianco>Buon divertimento!
+"""
+
+
+#
+# Questo messaggio viene inviato quando l'ip non è presente nel database nel comando /vpl accounts <address>
+address_not_in_database  =  "<red>L'IP %address% non è all'interno del database."
+#
+# Questo messaggio viene inviato quando il player non è presente nel database nel comando /vpl accounts <player>
+player_not_in_database  =  "<red>Il player %player% non è all'interno del database."
+#
+# Questo messaggio viene inviato quando il comando /vpl disable <player> viene eseguito e il player non ha il premium abilitato.
+player_not_premium  =  "<red>%player% non ha il premium attivato in questo momento."
+#
+# Questo messaggio viene inviato all'esecuzione del comando /vpl disable <player>.
+premium_disabled  =  "<#72A489>Hai disabilitato il premium per %player%."
+#
+# Questo messaggio viene inviato quando viene eseguito il comando /vpl accounts <player/address>.
+player_accounts  =  """
+<reset>
+<bold><#72A489>VPL ACCOUNTS</bold>
+<reset>
+<white>Utenti correlati a %value%:
+%users%
+"""
+#
+# Questo messaggio viene inviato quando viene eseguito il comando /vpl check <player>.
+premium_check  =  "<#72A489>%player% attualmente ha il premium %premium%."
+#
+# Questo messaggio viene inviato quando viene eseguito il comando /vpl stats e contiene il numero totale di utenti premium all'interno del database.
+premium_stats  =  """
+<reset>
+<bold><#72A489>VPL STATS</bold>
+<white>Ci sono <#72A489>%count% <white>players che hanno abilitato il premium.
+"""
+#
+# Questo messaggio viene inviato quando viene eseguito il comando /vpl.
+main_info           =  """
+<reset>
+<bold><#72A489>VPL HELP</bold>
+<reset>
+<dark_green>» <#72A489>/vpl    <gray>Permesso: <white>vpl.cmd
+<dark_green>» <#72A489>/vpl stats    <gray>Permesso: <white>vpl.stats
+<dark_green>» <#72A489>/vpl check <player>    <gray>Permesso: <white>vpl.check
+<dark_green>» <#72A489>/vpl disable <player>    <gray>Permesso: <white>vpl.disable
+<dark_green>» <#72A489>/vpl accounts <player/address>    <gray>Permesso: <white>vpl.accounts
+"""
+
+
+#
+# Questa è la variabile che sostituisce il placeholder %premium% nel messaggio premium_check.
+premium  =  { disabled = "<bold><red>DISABILITATO</bold>", enabled = "<bold><green>ABILITATO</bold>" }
+#
+# Questa variabile viene posizionata prima del nome del player nel messaggio player_accounts.
+account  =  { offline = "<red>", online = "<green>" }

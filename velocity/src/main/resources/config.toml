@@ -1,0 +1,47 @@
+[settings]
+#
+# This is the time in minutes in which the player can reconnect to confirm the premium.
+confirmation_time  =  2
+#
+# These are Velocity side commands that can be executed before login.
+allowed_commands  =  [
+    "register", "reg", "login", "l"
+]
+#
+# This is the language of the messages, at the moment only ENGLISH and ITALIAN are available.
+language  =  "ENGLISH"
+#
+# Through this configuration you can enable or disable plugin debugging.
+debug  =  false
+
+
+[auth_lobbies]
+# TO_EMPTIEST_SERVER  =  Send to the server with the fewest players
+# RANDOM              =  Send to a random server
+send_mode  =  "RANDOM"
+#
+# This is the auth_lobby list, the names to be entered must be the same as the names entered in the velocity.toml file
+servers  =  [
+    "Auth_Lobby"
+]
+
+
+[lobbies]
+# TO_EMPTIEST_SERVER  =  Send to the server with the fewest players
+# RANDOM              =  Send to a random server
+send_mode  =  "RANDOM"
+#
+# This is the lobby list, the names to be entered must be the same as the names entered in the velocity.toml file
+servers  =  [
+    "Lobby-1"
+]
+
+
+[database]
+#
+# These are the database credentials, if incorrect the plugin will start but will not execute the various queries.
+hostname   =  "localhost"
+database   =  "minecraft"
+username   =  "admin"
+password   =  "password"
+port  =  3306
