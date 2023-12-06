@@ -90,37 +90,37 @@ player_not_in_database  =  "<red>The %player% player is not inside the database.
 player_not_premium  =  "<red>%player% does not have premium activated at this time."
 #
 # This message is sent upon execution of the /vpl disable <player> command when premium is disabled for a player.
-premium_disabled  =  "<#72A489>You have disabled premium for %player%."
+premium_disabled  =  "<aqua>You have disabled premium for %player%."
 #
 # This message is sent when the /vpl check <player/address> command is executed.
 player_accounts  =  """
 <reset>
-<bold><#72A489>VPL ACCOUNTS</bold>
+<bold><aqua>VPL ACCOUNTS</bold>
 <reset>
 <white>Users related to %value%:
 %users%
 """
 #
 # This message is sent when the /vpl check <player> command is executed.
-premium_check  =  "<#72A489>%player% currently has premium %premium%."
+premium_check  =  "<aqua>%player% currently has premium %premium%."
 #
 # This message is sent when the /vpl stats command is executed and contains the total number of premium users within the database.
 premium_stats  =  """
 <reset>
-<bold><#72A489>VPL STATS</bold>
-<white>There are <#72A489>%count% <white>players registered as premium.
+<bold><aqua>VPL STATS</bold>
+<white>There are <aqua>%count% <white>players registered as premium.
 """
 #
 # This message is sent when the /vpl command is executed.
 main_info  =  """
 <reset>
-<bold><#72A489>VPL HELP</bold>
+<bold><aqua>VPL HELP</bold>
 <reset>
-<dark_green>» <#72A489>/vpl    <gray>Permission: <white>vpl.cmd
-<dark_green>» <#72A489>/vpl stats    <gray>Permission: <white>vpl.stats
-<dark_green>» <#72A489>/vpl check <player>    <gray>Permission: <white>vpl.check
-<dark_green>» <#72A489>/vpl disable <player>    <gray>Permission: <white>vpl.disable
-<dark_green>» <#72A489>/vpl accounts <player/address>    <gray>Permission: <white>vpl.accounts
+<aqua>» /vpl    <gray>Permission: <white>vpl.cmd
+<aqua>» /vpl stats    <gray>Permission: <white>vpl.stats
+<aqua>» /vpl check <player>    <gray>Permission: <white>vpl.check
+<aqua>» /vpl disable <player>    <gray>Permission: <white>vpl.disable
+<aqua>» /vpl accounts <player/address>    <gray>Permission: <white>vpl.accounts
 """
 
 

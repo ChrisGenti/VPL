@@ -1,6 +1,6 @@
 name: VPL
 description: ""
-version: "${version}"
+version: "1.0.0"
 main: com.github.chrisgenti.vpl.spigot.VPLPlugin
 authors:
   - ChrisGenti

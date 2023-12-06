@@ -80,7 +80,7 @@ public class VPLPlugin {
             * SETUP MESSAGE
          */
         this.sendMessage(
-                "<reset>", "<bold><#72A489>VPL  |  VELOCITY PREMIUM LOGIN</bold>"
+                "<reset>", "<bold><aqua>VPL  |  VELOCITY PREMIUM LOGIN</bold>"
         );
 
         /*
